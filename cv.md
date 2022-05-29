@@ -1,10 +1,10 @@
 # **Anna German**
 
-### **Contact information**
+### **Contacts**
 
-- *Location*: Belarus
+- *Location*: Minsk, Belarus
 - *Phone*: (+375-44) 794-17-19	
-- *E-mail*: femochko.ferry@gmail.com
+- *Email*: femochko.ferry@gmail.com
 - *Telegram*: @AG_1055
 - *Discord*: Anna German (@the-all-spark)
 
@@ -14,7 +14,7 @@
 
 After graduating from the Belarusian State University (the faculty of Geography and Geoinformatics), I was working for 2 years as a engineer-cartographer in a private company, then entered the master's program and subsequently became a postgraduate student (graduated with the diploma of researcher in 2021). 
 
-During this time and until now I have been working at the Department of Geodesy and Space Arial Cartography as a lecturer. My field of interest is computer design, map design, information technologies in cartography, three-dimensional art cartography.
+During this time and until now I have been working at the Department of Geodesy and Space Arial Cartography of BSU as a lecturer. My field of interests includes computer design, map design, information technologies in cartography, three-dimensional art cartography.
 
 Recently, I began interested in programming and in particular Frontend Development as one of the areas in the sphere of technology, which has a great potential.
 
