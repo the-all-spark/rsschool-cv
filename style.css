@@ -1,1 +1,29 @@
-/* ----- Styles for CV ------- */
+@font-face {
+      font-family: Barlow;
+      src: url("./assets/fonts/Barlow-Regular.ttf");
+}
+
+@font-face {
+      font-family: "Noto Serif";
+      src: url("./assets/fonts/NotoSerif-Bold.ttf");
+}
+
+body {
+      font-family: 'Barlow', sans-serif;
+      min-height: 100vh;
+      margin: 0; 
+      padding: 0;
+      /*display: flex;
+      flex-direction: column;
+      justify-content: space-between;*/
+}
+
+* {
+      box-sizing: border-box;
+}
+
+.header,
+.main,
+.footer {
+      border: 1px solid blue;
+}
