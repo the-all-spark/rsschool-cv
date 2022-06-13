@@ -17,29 +17,30 @@
 					<li class="nav-item"><a href="#work" class="nav-link">Work experience</a></li>
 					<li class="nav-item"><a href="#language" class="nav-link">Language</a></li>
 					<li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-					<li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+					<li class="nav-item"><a href="#code" class="nav-link">Code example</a></li>
 					<li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main class="main">
 			<section class="main-info">
-				<div>
+				<div class="photo">
 					<img src="./assets/AnnaGerman.jpg" alt="photo">
 				</div>
 				<h1 class="name">Anna German</h1>
-				<p>Lecturer at BSU.<br> Future Frontend developer</p>
+				<p class="text">Engineer-cartographer<br>Lecturer at BSU</p>
+				<p class="text">Frontend developer to be<br>I believe...</p>
+				<div class="location">
+					<img src="./assets/icons/location.svg" alt="icon">
+					Location: <br> <span>Minsk, Belarus</span>
+				</div>
 			</section>
-			<section class="contacts">
+			<section class="contacts" id="contacts">
 				<h2 class="section-title">Contacts</h2>
 				<ul class="contacts-list">
-					<li class="location">
-						<img src="./assets/icons/location.svg" alt="icon" width=20>
-						Location: <span>Minsk, Belarus</span>
-					</li>
 					<li class="phone">
 						<img src="./assets/icons/phone.svg" alt="icon" width=20>
-						Phone: <span>(+375-44) 794-17-19</span>
+						Phone: <span>(+&nbsp;375&nbsp;-&nbsp;44)&nbsp;794&nbsp;-&nbsp;17&nbsp;-&nbsp;19</span>
 					</li>
 					<li class="email">
 						<img src="./assets/icons/email.svg" alt="icon" width=20>
@@ -55,21 +56,100 @@
 					</li>
 				</ul>
 			</section>
-			<section class="about">
-
+			<section class="about" id="summary">
+				<h2 class="section-title">About myself</h2>
+				<p class="text">After graduating from the Belarusian State University (the faculty 
+					of&nbsp;Geography and Geoinformatics), I was working for 2 years as 
+					<span>an&nbsp;engineer-cartographer</span> in a private company, then entered the&nbsp;master's
+					program and subsequently became a postgraduate student 
+					(graduated with the diploma of researcher in 2021).</p>
+				<p class="text">During this time and until now I have been working at the Department
+					of Geodesy and Space Arial Cartography of BSU as <span>a&nbsp;lecturer</span>. My 
+					field of interests includes computer design, map design, 
+					information technologies in cartography, three-dimensional art 
+					cartography.</p>
+				<p class="text">Recently, I began interested in programming and in particular 
+					Frontend Development as one of the areas in the sphere of&nbsp;technology,
+					which has a great potential.</p>
+				<p class="text">I haven't got any experience in this field yet, but I hope to master
+					it, because I consider myself as a purposeful, responsible person, 
+					able and loving to learn.</p>
+                <section class="language" id="language">
+                    <h2 class="section-title">Language</h2>
+                    <p class="text"><span>English</span>: Intermediate - Upper-intermediate</p>
+                    <p class="text">Writting articles in English and taking part at International Cartographic 
+                        Conferences as a reporter (Poland, Japan).</p>
+                </section>       
 			</section>
-			<section class="code">
-
+			<section class="education-info" id="education">
+				<h2 class="section-title">Professional education</h2>
+				<h3>2022 - present time</h3>
+				<ul class="education">
+					<li>School of Business of BSU, Web-design and computer graphics</li>
+					<li>RS School, JavaScript/Front-end (Stage #0)</li>
+				</ul>
 			</section>
-			<section class="professional-info">
-
+			<section class="skills" id="skills">
+				<h2 class="section-title">Skills</h2>
+				<ul class="skills-list-main">
+					<li>Applying of VS Code</li>
+					<li>Basic knowledge of
+						<ul class="skills-list-second">
+							<li><span>HTML</span></li>
+							<li><span>CSS</span></li>
+							<li><span>JavaScript</span></li>
+							<li><span>Git, GitHub</span></li>
+						</ul>
+					</li>
+					<li>Usage of graphical editors
+						<ul class="skills-list-second">
+							<li><span>Adobe Photoshop</span></li>
+							<li><span>Adobe Illustrator</span></li>
+							<li><span>CorelDRAW</span></li>
+							<li><span>3ds Max</span></li>
+							<li><span>Adobe Animate CC</span></li>
+							<li><span>Figma</span></li>
+						</ul>
+					</li>
+				</ul>
+				<section class="code" id="code">
+					<h2 class="section-title">Code example</h2>
+					<div class="code-block">
+<pre>
+    <code class="code-example">
+    const myAnimal = {
+      name: "Volch",
+      color: "grey",
+      character: "wild",
+      confort: 1,
+      hunger: 3,
+      toEat: function() {
+            this.hunger--;
+        },
+      toRest: function() {
+            this.confort++;
+        }
+    }
+    </code>
+</pre>
+					</div>
+				</section>
 			</section>
-			<section class="skills">
-
+			<section class="work-info" id="work">
+				<h2 class="section-title">Work experience</h2>
+				<ul class="work">
+					<li>At BSU as a lecturer - since 2016</li>
+					<li>In Frontend Development - several projects (in progress), <a href="https://the-all-spark.github.io/rsschool-cv/" target="_blank">CV</a></li>
+				</ul>
 			</section>
 		</main>
 		<footer class="footer">
-
+			<div class="my-account">
+				<p class="text"><img src="./assets/icons/logo--github.svg" alt="icon" width=20><a href="https://github.com/the-all-spark" target="_blank">@the-all-spark</a>, 2022</p>
+			</div>
+			<div class="school">
+				<a href="https://rs.school/js/" target="_blank"><img src="./assets/icons/rs_school_js.svg" alt="icon" width=100></a>
+			</div>
 		</footer>
 	</body>
 </html>
