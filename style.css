@@ -1,1 +1,394 @@
-/* ----- Styles for CV ------- */
+/* ---- Variables ---- */
+
+:root {
+    --text_color: rgb(53, 53, 53);
+    --title_color: rgb(36, 36, 36);
+    --mark_color: rgb(66, 65, 146);
+    --menu_text_color: rgb(228, 228, 228);
+    --border_line_color: rgb(173, 173, 207);
+    --span_color: rgb(66, 65, 146);
+    --bgc_header_footer: rgb(129, 129, 129);
+}
+
+/* ---- Global fonts -----*/
+
+@font-face {
+    font-family: Barlow;
+    src: url("./assets/fonts/Barlow-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Noto Serif";
+    src: url("./assets/fonts/NotoSerif-Bold.ttf");
+}
+
+/* ----- Other global styles ----- */
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    padding-inline-start: 20px;
+}
+
+p {
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+}
+
+/* ----- Blocks ----- */
+
+body {
+    display: grid;
+    grid-template-areas:"header header header"
+                        "main main main"
+                        "footer footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 13fr 0.5fr;
+    width: 80%;
+    min-height: 100vh;
+    margin: 0 auto 0; 
+    padding: 0;
+}
+
+.header {
+    grid-area: header;
+    background-color: var(--bgc_header_footer);
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:"main-info about skills"
+                        "contacts education-info work-info";
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 77% 23%;
+    background-color: rgb(221, 221, 221);
+}
+
+.footer {
+    grid-area: footer;
+    background-color: var(--bgc_header_footer);
+}
+
+/* ---- Main navigation ---- */
+
+.nav-list {
+    margin: 10px 0 10px;
+    padding: 10px 0 10px;
+    text-align: center;
+}
+
+li.nav-item {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+a.nav-link {
+    display: inline-block;
+    padding: 2px 5px;
+    
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    line-height: 1.3;
+    text-decoration: none;
+    color: var(--menu_text_color);
+
+    border-top: 2px solid var(--border_line_color);
+    border-bottom: 2px solid var(--border_line_color);
+}
+
+.nav-link:hover {
+    color: var(--text_color);
+    background-color: rgb(221, 221, 221); 
+    transition: 0.7s;
+}
+
+/* ---- Sections ---- */
+
+.section-title { 
+    margin: 30px 20px 10px;
+    padding: 5px 10px;
+
+    font-family: "Noto Serif";
+    font-size: 18px;
+    text-align: center;
+    color: var(--title_color);
+
+    border-top: 2px solid var(--border_line_color);
+    border-bottom: 2px solid var(--border_line_color);
+}
+
+p.text,
+li,
+div.location  {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: var(--text_color);
+}
+
+/* ---- Main info ---- */
+
+.main-info {
+    grid-area: main-info;
+}
+
+div.photo {
+    margin: 30px 20px 0;
+    text-align: center;
+}
+
+.main-info img {
+    width: 80%;
+}
+
+.name {
+    margin: 20px 20px 10px;
+    padding: 5px 10px;
+    font-family: "Noto Serif";
+    font-size: 22px;
+    line-height: 2;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(66, 65, 146);
+    border-top: 2px solid var(--border_line_color);
+    border-bottom: 2px solid var(--border_line_color);
+}
+
+.main-info p {
+    text-align: center;
+}
+
+div.location {
+    width: 90%;
+    margin: 40px auto 40px;
+    padding: 20px 0 20px;
+    text-align: center;
+}
+
+.location img {
+    width: 10%;
+}
+
+.location span {
+    font-weight: bold;
+    color: var(--span_color);
+}
+
+/* ---- Contacts ---- */
+
+.contacts {
+    grid-area: contacts;
+}
+
+.contacts-list {
+    list-style: none;
+    
+}
+
+.contacts-list img {
+    margin-right: 10px;
+}
+
+.contacts-list span {
+    font-weight: bold;
+    color: var(--span_color);
+}
+
+/* ---- About myself---- */
+
+.about {
+    grid-area: about;
+}
+
+.about span {
+    font-weight: bold;
+}
+
+/* ---- Language ---- */
+
+.language span {
+    font-weight: bold;
+    color: var(--span_color);
+}
+
+/* ---- Education ---- */
+
+.education-info {
+    grid-area: education-info;
+}
+
+.education-info h3 {
+    padding: 0 20px 0;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+.education-info li {
+    margin: 0 10px;
+    list-style: none;
+}
+
+.education li::before {
+    content:"";
+    display: inline-block;
+    margin-right: 10px;
+    width: 5px;
+    height: 5px; 
+    border: 2px solid var(--mark_color);
+}
+
+/* ---- Skills ---- */
+
+.skills {
+    grid-area: skills;
+}
+
+.skills-list-main {
+    margin-left: 10px;
+    list-style: none;
+}
+
+.skills-list-second {
+    padding-left: 30px;
+    list-style: none;
+}
+
+.skills span {
+    color: var(--span_color);
+}
+
+.skills-list-main > li::before {
+    content:"";
+    display: inline-block;
+    margin-right: 10px;
+    width: 10px;
+    height: 10px; 
+    border: 2px solid var(--mark_color);
+}
+
+.skills-list-second > li::before {
+    content:"";
+    display: inline-block;
+    margin-right: 10px;
+    width: 5px;
+    height: 5px; 
+    border: 2px solid var(--mark_color);
+}
+
+/* ---- Code ---- */
+
+.code-block {
+    width: 70%;
+}
+
+.code-example {
+    font-size: 14px;
+}
+
+/* ---- Work experience ----*/
+
+.work-info {
+    grid-area: work-info;
+}
+
+.work li {
+    margin: 0 10px;
+    list-style: none;
+}
+
+.work li::before {
+    content:"";
+    display: inline-block;
+    margin-right: 10px;
+    width: 5px;
+    height: 5px; 
+    border: 2px solid var(--mark_color);
+}
+
+/* ----- Footer ----- */
+
+.footer {
+    display: grid;
+    grid-template-areas:"my-account school";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.my-account {
+    grid-area: my-account;
+    margin: 10px 10px;
+    padding: 5px;
+}
+
+.my-account p {
+    margin: 5px 0;
+}
+
+.school {
+    grid-area: school;
+    padding: 5px;
+}
+
+.my-account img {
+    margin-right: 10px;
+}
+
+.my-account p,
+.my-account a {
+    color: var(--menu_text_color);
+}
+
+.footer div:hover {
+    color: var(--text_color);
+    background-color: rgb(145, 145, 145); 
+    transition: 0.7s;
+}
+
+/* ---- Adaptive ---- */
+
+@media (max-width: 1000px) {
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a.nav-link {
+        margin-top: 5px;
+        font-size: 16px;
+        border-bottom: none;
+    }
+
+    body {
+        grid-template-rows: 15% 80% 5%;
+    }
+
+    .main {
+        grid-template-areas:"main-info contacts"
+                            "about skills"
+                            "education-info work-info";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 35% 2fr 1fr;
+    }
+
+    .main-info img {
+        width: 50%;
+    }
+
+    div.location {
+        margin: 20px auto 20px;
+        padding: 10px 0 10px;
+    }
+
+    .location img {
+        width: 10%;
+    }  
+}
