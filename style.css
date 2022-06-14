@@ -99,7 +99,7 @@ a.nav-link {
     border-bottom: 2px solid var(--border_line_color);
 }
 
-a:hover {
+.nav-link:hover {
     color: var(--text_color);
     background-color: rgb(221, 221, 221); 
     transition: 0.7s;
@@ -137,7 +137,7 @@ div.location  {
 }
 
 div.photo {
-    margin: 20px 20px 0;
+    margin: 30px 20px 0;
     text-align: center;
 }
 
@@ -146,12 +146,16 @@ div.photo {
 }
 
 .name {
+    margin: 20px 20px 10px;
+    padding: 5px 10px;
     font-family: "Noto Serif";
     font-size: 22px;
     line-height: 2;
     text-transform: uppercase;
     text-align: center;
     color: rgb(66, 65, 146);
+    border-top: 2px solid var(--border_line_color);
+    border-bottom: 2px solid var(--border_line_color);
 }
 
 .main-info p {
@@ -320,10 +324,17 @@ div.location {
 
 .my-account {
     grid-area: my-account;
+    margin: 10px 10px;
+    padding: 5px;
+}
+
+.my-account p {
+    margin: 5px 0;
 }
 
 .school {
     grid-area: school;
+    padding: 5px;
 }
 
 .my-account img {
@@ -333,6 +344,12 @@ div.location {
 .my-account p,
 .my-account a {
     color: var(--menu_text_color);
+}
+
+.footer div:hover {
+    color: var(--text_color);
+    background-color: rgb(145, 145, 145); 
+    transition: 0.7s;
 }
 
 /* ---- Adaptive ---- */
